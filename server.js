@@ -2,7 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const EmployeeModel = require("./employee.js");
 const cors = require("cors");
+<<<<<<< HEAD
 mongoose.connect("mongodb://localhost:27017/todo")
+=======
+const path = require("path"); // Import path module
+mongoose.connect("mongodb+srv://nathanaelniyogushimwa:nathanadmin@cluster0.wfhnzka.mongodb.net/todo");
+
+>>>>>>> ca330300283adc760d5a4ec9bc24c11617dbd235
 const app = express();
 app.use(cors());
 app.use(express.json());
