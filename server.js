@@ -11,9 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(
-   cors({
-      orgin:["http://localhost:3000","https://crudfrontend-r880.onrender.com"]
-   })
+   cors()
 )
 app.post("/employees",(req,res)=>{
    EmployeeModel.create(req.body)
